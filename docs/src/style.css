@@ -1,0 +1,29 @@
+@import url(http://cdn.font-store.ir/nika.css);
+
+:root {
+    --bg-secondary-color: #f7f7f7;
+}
+* {
+    font-family: nika;
+}
+#text {
+    display: none;
+}
+#text:target {
+    display: block;
+    padding: 5rem 2rem;
+}
+pgbar bar2{
+    position:absolute;
+    left: 0;
+    display:flex;
+    align-items:center;
+    padding:2px 5px;
+    padding-left:calc(var(--not-active) / 2);
+    background-color:var(--active-color2);
+    box-shadow:2.5px 0 .5px var(--secondary-color);
+    width:var(--not-active);
+    height:100%;
+    color:var(--not-active);
+    filter:none
+}

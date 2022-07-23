@@ -1,37 +1,12 @@
-@font-face {
-    font-family: 'Nika';
-    src:url('Nika-Regular.woff2') format('woff2'),
-    url('Nika-Regular.woff') format('woff'),
-    url('Nika-Regular.ttf') format('truetype'),
-	url('Nika-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-:root {
-    --bg-secondary-color: #f7f7f7;
-}
+@import url(https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css);
 * {
-    font-family: nika;
+    font-family: Vazirmatn;
 }
-#text {
-    display: none;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#text:target {
-    display: block;
-    padding: 5rem 2rem;
-}
-pgbar bar2{
-    position:absolute;
-    left: 0;
-    display:flex;
-    align-items:center;
-    padding:2px 5px;
-    padding-left:calc(var(--not-active) / 2);
-    background-color:var(--active-color2);
-    box-shadow:2.5px 0 .5px var(--secondary-color);
-    width:var(--not-active);
-    height:100%;
-    color:var(--not-active);
-    filter:none
+p.small {
+    font-size: 14px;
 }
